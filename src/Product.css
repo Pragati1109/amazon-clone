@@ -8,20 +8,31 @@
   width: 100%;
   max-height: 400px;
   min-width: 100px;
-  background-color: #fff;
+  background: linear-gradient(to bottom, #000, darkgray);
   z-index: 1;
+  border-radius: 9px;
+}
+
+.product:hover {
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02);
+  box-shadow: 10px 10px 5px rgb(46, 44, 44);
 }
 
 .product > img {
   max-height: 200px;
-  width: 100%;
+  /*width: 100%;*/
   object-fit: contain;
   margin-bottom: 15px;
+  box-shadow: 10px 10px 5px lightgray;
+  border-radius: 8px;
 }
 
 .product__info {
   height: 100px;
   margin-bottom: 15px;
+  color: #fff;
 }
 
 .product__price {
@@ -29,11 +40,25 @@
 }
 
 .product > button {
-  background: #f0c14f;
+  background: linear-gradient(-10deg, #000, darkgray);
   border: 1px solid;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
+  border-color: white darkgray lightgray;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+  font-size: 13px;
+  box-shadow: 2px 2px 1px black;
+}
+
+.product > button:hover {
+  cursor: pointer;
+  cursor: pointer;
+  background: linear-gradient(-10deg, darkgray, #000);
+  -ms-transform: scale(1.06); /* IE 9 */
+  -webkit-transform: scale(1.06); /* Safari 3-8 */
+  transform: scale(1.06);
 }
 
 /* Added by me*/

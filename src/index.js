@@ -12,7 +12,7 @@ ReactDOM.render(
       <App />
     </StateProvider>
   </React.StrictMode>,
-  document.getElementById("index.html")
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
